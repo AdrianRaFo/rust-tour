@@ -8,8 +8,7 @@ pub fn guessing_game() {
   loop {
     println!("Please input your guess.");
     let mut guess = String::new();
-    io::stdin().read_line(&mut guess)
-      .expect("Failed to read line");
+    io::stdin().read_line(&mut guess).expect("Failed to read line");
     if guess.trim().to_lowercase() == "quit".to_string() {
       println!("Goodbye!");
       break;
