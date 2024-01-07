@@ -1,7 +1,9 @@
-mod guessing_game;
+use crate::http_server::serve;
 
-use guessing_game::guessing_game;
+mod guessing_game;
+mod http_server;
 
 fn main() {
-  guessing_game();
+  // guessing_game();
+  serve();
 }
